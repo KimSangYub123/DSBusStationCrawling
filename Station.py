@@ -69,8 +69,7 @@ class Line:
     def makeJson(self):
 
         try:
-            with open("./stationList.json", 'w+', encoding='utf-8') as fw:
+            with open("C:/Users/stven/eclipse-workspace/SamsungUVIS/MD-BUS/stationList.json", 'w+', encoding='utf-8') as fw:
                 json.dump(self.stationDict, fw, sort_keys=True, indent=4, ensure_ascii=False)
         except Exception as e:
-            print("error: ")
-            self.log.error(e)
+            print("error: ",e)
